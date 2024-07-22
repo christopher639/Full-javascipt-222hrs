@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+  <h2>Cart Quanity</h2>
+    <button onclick="
+     console.log(`Cart Quantity: ${cartQuantity}`);
+        
+        ">Show Quanity</button>
+
+    <button onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to cart</button>
+
+    <button onclick="
+    cartQuantity = cartQuantity +2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    
+    
+    ">+2</button>
+    <button onclick="
+     cartQuantity = cartQuantity +3;
+     console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+3</button>
+    <button onclick="
+     cartQuantity = 0;
+     console.log('Cart quantity was reset');
+     console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Reset cart</button>
+
+    <script>
+     //create a vatiable to save the cart quantity
+     let cartQuantity = 0;
+     //naming convetion of variables used in programming
+     //carmell case
+     //Pascal case
+     //kebab case
+     //snake case
+     const variable2 =43542; // its called a const becuse tis vslue cant be changed
+     /// using var keyword to create a varible in javaasdcript
+     var myName = "Christopher bundni";// var has some issues so its not mostly used in javascript
+     //using typs of in varibles
+     console.log(typeof(3));
+     console.log(typeof(myName));//in the consloe it returns the String 
+     // you can use typeof to check the data type of the varibles
+     
+
+    </script>
+</body>
+</html>
