@@ -6,7 +6,53 @@
     <title>Dom projects</title>
 </head>
 <body>
+   <style>
+    
+    .js-sub-btn{
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        width: 130px;
+    }
+    .btn-cal{
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .js-cost-input{
+        height: 38px;
+        width: 150px;
+        font-size: 20px;
 
+    }
+    .total{
+        font-size: 30px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .amazon{
+        width: 300px;
+        margin: 2px;
+        height: 350px;
+        border: 1px solid green;
+        justify-content: center;
+        align-items: center;
+    }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   </style>
+
+   <div class="amazon">
     <p>You Tube subscription</p>
     <button class="js-sub-btn">subscribe</button>
     <p>Amazon Shipping calculator</p>
@@ -15,6 +61,7 @@
     <input type="number" class="js-cost-input" placeholder="Cost of order">
     <button class="btn-cal" onkeydown="entershotcut(event);">Calculate</button>
     <p class="total"></p>
+   </div>
     <script src="domscript.js"></script>
 </body>
 </html>
