@@ -10,8 +10,10 @@
     <p>You Tube subscription</p>
     <button class="js-sub-btn">subscribe</button>
     <p>Amazon Shipping calculator</p>
+    <p>Orders under Ksh40  = + ksh10 for shipping</p>
+    <p>Orders over Ksh40  = free shipping</p>
     <input type="number" class="js-cost-input" placeholder="Cost of order">
-    <button class="btn-cal">Calculate</button>
+    <button class="btn-cal" onkeydown="entershotcut(event);">Calculate</button>
     <p class="total"></p>
     <script src="domscript.js"></script>
 </body>

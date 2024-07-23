@@ -28,3 +28,11 @@ function subscribe(){
     })
   }
   calculateTotal();
+
+
+     function entershotcut(event){
+            if(event.key==='Enter'){
+                calculateTotal();
+            }
+        }
+  
