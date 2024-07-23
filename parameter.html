@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions parameter</title>
+</head>
+<body>
+    
+    <script>
+        //perameters syntax folows that of varibles'
+        function  calculateTax(totalAmount,tax){
+            console.log(totalAmount*tax/100);
+        }
+        calculateTax(100, 23);
+        calculateTax(10000,45);
+
+        //lerning objects
+         product ={
+            productName: 'Shoes',
+            price : 2003.534,
+            rating:{
+                start:4.5,
+                count:89
+            }
+            ,
+            fun: function fun1(){
+               console.log("This a function inside the object")
+            }
+
+         }
+         console.log(product.rating.count)
+         //buit in objects
+         //json and local storage
+         // Javascript Object notation
+         const jsonn =  JSON.stringify(product);
+    
+         console.log(jsonn);
+        console.log(typeof(jsonn));
+        //JSON.pause 
+         const backtoObject = JSON.parse(jsonn);
+        console.log(backtoObject);
+        //local storage
+        //How to use local storage
+        const person ={
+            name:'Christopher Bundi',
+            age:22,
+            height:5.6,
+            weight :60,
+            school:'Kibabii university',
+            coours:'Bachelor of Science in Computer'
+        }
+        console.log(person.name.toUpperCase());
+        alert(`${person.name.toUpperCase()} age ${person.age}`);
+        
+    </script>
+</body>
+</html>

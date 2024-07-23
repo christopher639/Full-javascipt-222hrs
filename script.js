@@ -2,6 +2,15 @@
         //when click a button , the computwer will randomly pick a move
         //compare the move to get the result
         // them  display the result\\
+  const score = {
+    wins: 0,
+    losses: 0,
+    ties :0
+  }
+
+  const inStore = localStorage.getItem('Message');
+  console.log(inStore);
+
         let computerMove ='';
         function pickComputerMove(){
         
@@ -16,6 +25,7 @@
                     computerMove = 'scissor';
                     }
                     console.log(computerMove);
+
 
         }
         function scissor(){
@@ -46,7 +56,7 @@
 
         }
 
-        function rock(){
+        function rock(playerMove){
             let result = '';
                 if(computerMove === 'rock'){
                     result = 'Tie';
@@ -56,5 +66,24 @@
                 else if(computerMove === 'scissor'){
                     result = 'You  Won';
                 }
-                alert(`You picked rock , computer picked ${computerMove} you ${result} `);
+
+
+                if(result ==='You won'){
+                    score.wins +=1;
+                }
+                else if(result === 'You lose'){
+                    score.losses +=1;
+                }
+                else if(result === 'Tie'){
+                    score.ties +=1;
+
+                }
+                alert(`You picked rock , computer picked ${computerMove} you ${result}
+                    Wins: ${score.wins},  Wins: ${score.losses},  Wins: ${score.ties} `);
+
+                    localStorage.setItem('Message', 'Hello');
+      }
+
+      function playGame(){
+
       }
