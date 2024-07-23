@@ -7,7 +7,8 @@
     losses: 0,
     ties :0
   }
-
+  document.querySelector('.js-score').innerHTML =`{computerMove} you ${result}
+                    Wins: ${score.wins},  Wins: ${score.losses},  Wins: ${score.ties} ` ;
   const inStore = localStorage.getItem('Message');
   console.log(inStore);
 
