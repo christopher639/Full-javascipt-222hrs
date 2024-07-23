@@ -7,6 +7,7 @@
 </head>
 <body>
     <button>Hello</button>
+    <button class="js-button">Second button</button>
     <script>
     //Dom document objec
     document.querySelector('button').innerHTML ='Click Me !';
@@ -14,7 +15,9 @@
         alert('This is DoM');
        
     })
+    const btnElement = document.querySelector('.js-button').innerHTML = "Nice one you changed me";
     document.title= 'Changed';
+    console.log(btnElement);
 
     document.querySelector('');//tells javascript which thml element to select
     
