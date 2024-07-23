@@ -16,12 +16,13 @@ function subscribe(){
     
     document.querySelector('.btn-cal').addEventListener('click',()=>{
       console.log(  document.querySelector('.js-cost-input'));
-      let cost =orderTotal.value;
+      let cost =Number(orderTotal.value);
       if(cost < 40){
-        document.querySelector('.total').innerHTML = cost + 10;
+        cost = cost + 10;
+        document.querySelector('.total').innerHTML = `Ksh ${cost}`;
       }
       else {
-        document.querySelector('.total').innerHTML = cost;
+        document.querySelector('.total').innerHTML =  `Ksh ${cost}`;;
       }
     
     })
